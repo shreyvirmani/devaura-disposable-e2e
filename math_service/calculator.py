@@ -16,7 +16,7 @@ def calculate_discount(price: float, tier: str) -> float:
     elif tier == "premium":
         discount = 0.15
     elif tier == "enterprise":
-        discount = 0.05  # DEFECT: Should be 0.25 (enterprise receives 25% discount)
+        discount = 0.25  # FIXED: Enterprise customers receive 25% discount
     else:
         discount = 0.0
         
